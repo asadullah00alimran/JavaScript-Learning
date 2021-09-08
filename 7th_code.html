@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+</head>
+<body>
+    <script>
+        var text = "Bangladesh";
+        var len = text.length;
+        document.write(len);
+
+        document.write("<br>Number of character : "+len);
+
+        document.write("<br>Number of character : "+text.length);
+
+        //var name = prompt("enter Your Name : ");
+        //document.write("<br>Number of character of (" + name + ") : " +name.length);
+
+        var country = "Bangladesh";
+        
+        document.write("<br>"+country.charAt(5));
+
+        var upper = country.toUpperCase();
+        document.write("<br>"+ upper);
+
+        var upper = country.toLowerCase();
+        document.write("<br>"+ upper);
+
+        var country = "Bangladesh";
+        var capital ="<br>Dhaka is the capital of ";
+        document.write(capital.concat(country));
+
+        var country = "Bangladesh";
+        var slice = country.slice(0,3);
+        document.write("<br>"+slice);
+
+        // Task
+
+        var firstName = prompt("Enter First Name : ");
+        var lastName = prompt("Enter Last Name : ");
+        var fullName = firstName + lastName;
+        document.write("<br> Full Name : " +fullName);
+        
+        var len_of_fullname = fullName.length();
+        document.write("<br>",len_of_fullname);
+
+        var uppercase = fullName.toUpperCase();
+        document.write("<br>", uppercase);
+
+
+    </script>
+</body>
+</html>
