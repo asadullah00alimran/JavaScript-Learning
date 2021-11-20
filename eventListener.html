@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listener</title>
+
+
+    <style>
+        .myStyle-1, .myStyle-2{
+            color: tomato;
+            font-size: 3rem;
+        }
+    </style>
+
+
+</head>
+<body>
+
+
+    
+<button class="btn-1">Click me</button>
+<button class="btn-2">Click me</button>
+<h1 class="myStyle-1">I love Bangladesh</h1>
+<h1 class="myStyle-2">I love Barisal</h1>
+
+
+    
+    
+    <script>
+
+        document.querySelector(".btn-1").addEventListener("click",function(){
+            alert("Hello! It is Event Listener practice code");
+        });
+
+        
+        document.querySelector(".btn-2").addEventListener("click",myfunction);
+        function myfunction(){
+            alert("Hello");
+        }
+        
+        var myVar1 = document.querySelector(".myStyle-1");
+        myVar.addEventListener("click",function(){
+            alert("Love Bangladesh");
+        });
+
+        var myVar2 = document.querySelector(".myStyle-2");
+        myVar.addEventListener("click",function(){
+            alert("Beautiful Barisal");
+        });
+        
+    </script>
+
+
+</body>
+</html>
